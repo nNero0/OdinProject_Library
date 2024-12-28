@@ -1,0 +1,62 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+    font-size: 20px;
+
+
+
+}
+
+.left-bar{
+    display: flex;
+    flex-direction: column;
+    color: ghostwhite;
+    background-color: rgb(52, 73, 102);    
+}
+.left-bar a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+
+.main-content{
+    background-color: rgb(180, 205, 237);
+}
+
+.bookinfo{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 2fr;
+    gap:10px
+}
+
+.readbox,.buttonbox{
+    grid-column: span 2;
+
+}
+
+.card{
+    width: 18rem;
+    
+}
+
+
+.Bookstatus {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    border: solid red;
+    
+}
+
+.Bookstatus:hover,
+.Bookstatus:focus,
+.Bookstatus:active {
+    transform: scale(1.1);
+}
